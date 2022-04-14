@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="bootstrap-4.2.1-dist/css/bootstrap.min.css" />
+    <title>AdoptaYA!</title>
+</head>
+<body>
+    <h1>Formulario de Contacto</h1>
+<form method="POST" action="/index.php" class="needs-validation" novalidate>
+    <div>
+        <label>Nombre</label>
+        <input type="text" class="form-control" id="validarNombre" name="validarNombre" required>
+    </div>
+
+    <div class="form-row">
+        <div class="col-md-4 mb-3">
+            <label for="validarEmail">Email:<span class="red">*</span></label>
+            <input type="email" class="form-control" id="validarEmail" name="validarEmail" required>
+        </div>
+    </div>
+
+    <div class="form-row">
+        
+        <div class="form-check mb-2 mr-sm-2">      
+            <input class="form-check-input" type="checkbox" id="recordar">      
+            <label class="form-check-label" for="recordar">Rut</label>
+        </div>
+
+        <div class="form-check mb-2 mr-sm-2">      
+            <input class="form-check-input" type="checkbox" id="recordar">      
+            <label class="form-check-label" for="recordar">Pasaporte</label>
+        </div>
+   
+        <div class="col-md-4 mb-3">
+            <label for="validarDNI"></label>
+            <input type="text" class="form-control" id="validarDNI" name="validarDNI" required>
+        </div>
+    </div>
+
+    <div class="form-row">
+        <div class="col-md-4 mb-3">
+            <label for="validarTelefono">Teléfono:</label>
+            <input type="number" class="form-control" id="validarTelefono" name="validarTelefono" max="999999999">
+        </div>
+    </div>
+
+    <div class="form-row">
+        <div class="col-md-4 mb-3">
+            <label for="validarCiudad">Ciudad:<span class="red">*</span></label>
+            <select class="custom-select" id="validarCiudad" name="validarCiudad" required>
+                <option selected disabled value="">Selecciona...</option>
+                <option value="Cerrillos">Cerrillos</option>
+                <option value="Cerro Navia">Cerro Navia</option>
+                <option value="Conchalí">Conchalí</option>
+                <option value="El Bosque">El Bosque</option>
+                <option value="Estación Central">Estación Central</option>
+                <option value="Huechuraba">Huechuraba</option>
+                <option value="Independencia">Independencia</option>
+                <option value="La Cisterna">La Cisterna</option>
+                <option value="La Florida">La Florida</option>
+                <option value="La Granja">La Granja</option>
+                <option value="La Pintana">La Pintana</option>
+                <option value="La Reina">La Reina</option>
+                <option value="Las Condes">Las Condes</option>
+                <option value="Lo Barnechea">Lo Barnechea</option>
+                <option value="Lo Espejo">Lo Espejo</option>
+                <option value="Lo Prado">Lo Prado</option>
+                <option value="Macul">Macul</option>
+                <option value="Maipú">Maipú</option>
+                <option value="Ñuñoa">Ñuñoa</option>
+                <option value="Padre Hurtado">Padre Hurtado</option>
+                <option value="Pedro Aguirre Cerda">Pedro Aguirre Cerda</option>
+                <option value="Peñalolén">Peñalolén</option>
+                <option value="Pirque">Pirque</option>
+                <option value="Providencia">Providencia</option>
+                <option value="Pudahuel">Pudahuel</option>
+                <option value="Puente Alto">Puente Alto</option>
+                <option value="Quilicura">Quilicura</option>
+                <option value="Quinta Normal">Quinta Normal</option>
+                <option value="Recoleta">Recoleta</option>
+                <option value="Renca">Renca</option>
+                <option value="San Bernardo">San Bernardo</option>
+                <option value="San Joaquín">San Joaquín</option>
+                <option value="San José de Maipo">San José de Maipo</option>
+                <option value="San Miguel">San Miguel</option>
+                <option value="San Ramón">San Ramón</option>
+                <option value="Santiago">Santiago</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="validationMensaje">Comentario:<span class="red">*</span></label>
+        <textarea class="form-control" id="validationMensaje" name="validationMensaje" rows="3" min="25" required></textarea>
+    </div>
+
+    <div class="form-group mb-10">
+        <button class="btn btn-primary" type="submit" name="submit">Enviar</button>
+        <button class="btn btn-success" type="reset" name="reset">Limpiar</button>
+    </div>
+
+</form>  
+</body>
+</html>
